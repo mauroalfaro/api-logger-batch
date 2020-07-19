@@ -1,10 +1,10 @@
 version: '3.3'
 services:
-  stock-db:
+  logs-db:
     image: mysql:5.7
     restart: always
     environment:
-      MYSQL_DATABASE: 'stock-db'
+      MYSQL_DATABASE: 'logs-db'
       MYSQL_USER: 'user'
       MYSQL_PASSWORD: 'password'
       MYSQL_ROOT_PASSWORD: 'password'
@@ -15,4 +15,4 @@ services:
     expose:
       - '3306'
 volumes:
-  stock-db:
+  logs-db:

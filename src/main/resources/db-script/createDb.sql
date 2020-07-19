@@ -1,10 +1,11 @@
 CREATE TABLE LogEvent  (
-    sku integer NOT NULL PRIMARY KEY,
-    name varchar(20),
-    description varchar(20),
-    longDescription varchar(80),
-    category varchar(20),
-    price integer,
-    authorizedForSale varchar(20),
-    dateImported date
+    logId varchar(20) NOT NULL PRIMARY KEY,
+    timestamp timestamp,
+    version integer,
+    message varchar(20),
+    loggerName varchar(80),
+    threadName varchar(20),
+    level varchar(10),
+    importedDate timestamp,
+    runBatchId integer
 );
