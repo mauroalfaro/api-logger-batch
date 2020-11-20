@@ -26,7 +26,7 @@ Before testing the app, you should start the database with Docker compose. Head 
 ```
 or docker-compose up -d if you want to detach.
 
-This will start the stock-db pointing to the default MySQL port. You can use MySQL Workbench or any other client to test connection. Check user and password presents on the yaml in case that you have any issues connecting.
+This will start the logs-db pointing to the default MySQL port. You can use MySQL Workbench or any other client to test connection. Check user and password presents on the yaml in case that you have any issues connecting.
 Run the command docker-compose logs to check the logs from the db if you are dettaching.
 
 To build the app without tests, run:
