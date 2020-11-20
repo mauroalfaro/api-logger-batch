@@ -6,7 +6,7 @@ Spring Batch app which pulls log files from a path and exports them to a db by d
 ## Design
 Simple Spring Batch application. Is designed to work with log files with the structure of logback-encoder, that's why is mainly oriented to APIs.
 
-The app provides two ways to pull log files from the path of your choice, one with an endpoint that being hit, it will trigger the job, and a scheduler that will configure the application to pull files from the path in the time window that is setted.
+The app provides two ways to pull log files from a path of your choice, one with an endpoint that when being hit, the job will be triggered, and a scheduler that will configure the application to pull files from the path in the time window that is setted.
 The log files pulled will be processed and imported to a database running on a Docker container.
 
 Includes:
